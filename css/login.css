@@ -1,0 +1,156 @@
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.images, .masking {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 500px;
+    min-height: 600px;
+}
+
+.images {
+    background: url('../images/stock-photo-168077145.jpg') center 100% no-repeat;
+    background-size: cover;
+}
+
+.masking {
+    background: rgba(0,0,0,0.6);
+}
+
+.images .masking .content {
+    position: relative;
+    margin: 10% auto 0 auto;
+    width: 400px;
+    height: 220px;
+    background: rgba(225,225,225,0.5);
+    border-radius: 4px;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+/*.content:hover {*/
+
+    /*transform: rotateY(180deg);*/
+/*}*/
+
+.title {
+    padding: 10px 0;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.text {
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 5px;
+    height: 30px;
+    width: 90%;
+}
+
+.loginBtn {
+    background-color: #0077d9;
+}
+
+.loginBtn:hover {
+    background-color: #0070cd;
+}
+
+.registerBtn {
+    background-color: #df4b3b;
+}
+
+.registerBtn:hover {
+    background-color: #ea6152;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 35px;
+    width: 91%;
+    font-size: 18px;
+    color: #ffffff;
+    border: 0;
+}
+
+.bottom {
+    display: inline-block;
+    font-size: 10px;
+    padding: 10px 0;
+    margin-left: 5%;
+    text-decoration: none;
+}
+
+.register {
+    color: #df4b3b;
+}
+
+.register:hover {
+    color: #ea6152;
+}
+
+.login {
+    color: #0077d9;
+}
+
+.login:hover {
+    color: #0070cd;
+}
+
+.front, .back {
+    /*backface-visibility: hidden;*/
+    /*-webkit-backface-visibility:hidden;	!* Chrome 和 Safari *!*/
+    /*-moz-backface-visibility:hidden; 	!* Firefox *!*/
+    /*-ms-backface-visibility:hidden;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*left: 0;*/
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(-180deg);
+}
+
+.disabled {
+    background-color: #9d9ea0;
+}
+
+.disabled:hover {
+    background-color: #9d9ea0;
+}

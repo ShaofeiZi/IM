@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link type="text/css" rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+    <div class="images">
+        <div class="masking">
+            <div style="perspective: 500px; -webkit-perspective: 500px">
+                <div id="content" class="content">
+                    <div id="front" class="front">
+                        <h3 class="title">登陆</h3>
+                        <input id="user" class="text" type="text" placeholder="请输入账号"/>
+                        <input id="pwd" class="text" type="password" placeholder="请输入密码"/>
+                        <button id="loginBtn" class="loginBtn btn">登陆</button>
+                        <a href="#" id="register" class="register bottom">还没有账号？点击注册</a>
+                    </div>
+                    <div id="back" class="back">
+                        <h3 class="title">注册</h3>
+                        <input id="username" class="text" type="text" placeholder="请输入账号"/>
+                        <input id="nickname" class="text" type="text" placeholder="请输入昵称"/>
+                        <input id="password" class="text" type="password" placeholder="请输入密码"/>
+                        <button id="registerBtn" class="registerBtn btn">注册</button>
+                        <a href="#" id="login" class="login bottom">已有账号？点击登陆</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="../js/IM/strophe.js"></script>
+<script src="../js/IM/easemob.im-1.1.js"></script>
+<script src="../js/IM/easemob.im-1.1.shim.js"></script>
+<script src="../js/easemob.im.config.js"></script>
+<script src="../js/login.js"></script>
+
+
+</html>

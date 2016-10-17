@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="images">
+    <div class="masking">
+        <div class="content">
+
+            <div class="left">
+                <div class="nav">
+                    <!--最左侧导航-->
+                    <img style="width: 26px; height: 26px" src="images/listIcon.png">
+                    
+                    <img src="images/mes.png">
+                    <!--<img src="images/list.png">-->
+                                
+                </div>
+                <div class="list">
+                    <div class="add">
+                        <!--添加好友-->
+                        <input id="userID" type="text" placeholder="请输入账号添加好友"/>
+                        <button id="addBtn">+</button>
+                    </div>
+
+                    <!--好友请求-->
+                    <div id="isAdd">
+                        <h5 id="none" class="newUser">好友请求</h5>
+                    </div>
+
+                    <!--好友列表-->
+                    <div id="userList">
+                        <h5 class="newUser">好友列表</h5>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div id="msg" class="right">
+                <div class="message">
+                    <!--消息框-->
+                    <h4 id="msgHeader"></h4>
+
+
+                    <div id="message" class="msgContent">
+
+                    </div>
+                </div>
+                <div class="send">
+                    <div class="sendImg">
+                        <!--<img src="images/biaoqing.png"/>-->
+                        <img src="images/tupian.png"/>
+                        <!--<img src="images/yuyin.png"/>-->
+                    </div>
+                    <!--发送消息框-->
+                    <div class="sendMsg">
+                        <textarea id="msgText" class="sendText"></textarea>
+                    </div>
+
+                    <div class="sendBtn">
+                        <!--发送按钮-->
+                        <button id="sending">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/IM/strophe.js"></script>
+<script src="js/IM/easemob.im-1.1.js"></script>
+<script src="js/IM/easemob.im-1.1.shim.js"></script>
+<script src="js/easemob.im.config.js"></script>
+<script src="js/index.js"></script>
+</html>
